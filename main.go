@@ -34,5 +34,6 @@ func suffix() {
 
 func main() {
 	suffix()
+	fmt.Println("\n\nMysuffix\n\n")
 	mysuffix()
 }
