@@ -10,8 +10,8 @@ func mysuffix() {
 	data := []byte("CAGGGTAGATGTATACGT")
 	lookup := []byte("ATG")
 	length := len(lookup)
-	index := suffixarray.New(data)
-	offsets := index.Lookup(lookup, -1)
+	index := New(data)
+	offsets := index.lookupAll(lookup)
 	fmt.Println(string(data))
 	for _, offset := range offsets {
 		spaces := strings.Repeat(" ", offset)
@@ -33,7 +33,7 @@ func suffix() {
 }
 
 func main() {
-	suffix()
-	fmt.Println("\n\nMysuffix\n\n")
+	//suffix()
+	//fmt.Println("\nMysuffix: ")
 	mysuffix()
 }

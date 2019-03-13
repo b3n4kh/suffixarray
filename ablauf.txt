@@ -1,0 +1,9 @@
+14 6 1 12 8 0 15 7 2 3 16 4 10 17 13 5 11 9
+C  A G G  G T A  G A T G  T A  T  A  C G  T
+
+   A          A    A        A     A               5
+C                                    C            2
+     G G  G      G     G               G          6
+            T        T    T    T          T       5
+
+

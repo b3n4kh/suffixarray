@@ -24,7 +24,10 @@
 
 package main
 
-import "sort"
+import (
+	"fmt"
+	"sort"
+)
 
 func qsufsort(data []byte) []int {
 	// initial sorting by first byte of suffix
@@ -82,6 +85,7 @@ func sortedByFirstByte(data []byte) []int {
 	sum := 0
 	for b := range count {
 		count[b], sum = sum, count[b]+sum
+		fmt.Printf("Count[b]: %d Sum: %d\n", count[b], sum)
 	}
 	// iterate through bytes, placing index into the correct spot in sa
 	sa := make([]int, len(data))
